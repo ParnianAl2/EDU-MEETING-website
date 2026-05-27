@@ -1,0 +1,1106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --red-color: rgb(152, 43, 43);
+    --yellow-color: rgb(223, 168, 29) ;
+    --gray-color :  rgb(21, 20, 27) ;
+}
+
+.one {
+    position: relative;
+}
+
+.one img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(31, 39, 43, 0.75);
+}
+
+nav h1 {
+    font-size: 2.5rem;
+}
+
+nav {
+    width: 100%;
+    height: 10rem;
+    background-color: rgba(255, 255, 255, 0.165);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 2.4rem;
+}
+
+nav a {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+nav a:hover {
+    color: rgb(211, 150, 29);
+}
+
+nav ul li:nth-child(4) {
+    position: relative;
+    display: inline-block;
+}
+
+nav>ul>li>ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 13px;
+    padding-left: 15px;
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    top: 150%;
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+    transition: all .5s;
+}
+
+nav ul li ul li a {
+    color: black;
+    font-size: 13px;
+}
+
+nav ul li:nth-child(4):hover ul {
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+nav ul li:nth-child(1) a {
+    color: var(--yellow-color);
+}
+.caption {
+    margin: 4% 8%;
+    width: 40% ;
+    height: 25% ;
+}
+
+.caption h3,
+.caption h1,
+.caption p {
+    color: white;
+}
+
+.caption h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.caption h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.caption p {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+}
+
+.caption p a {
+    color: rgb(61, 184, 211);
+}
+
+.RedButton {
+    margin: 5% 8%;
+    width: 14.5rem;
+    height: 4.5rem;
+    border-radius: 2.5rem;
+    background-color: var(--red-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+.RedButton a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    transition: all.3s;
+}
+.RedButton a:hover {
+    color: rgb(176, 176, 177);
+}
+.two {
+    width: 100%;
+    height: 29rem;
+    position: relative;
+    background-image:  url(../image/meetings-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.slid {
+    width: 100% ;
+    height: 100%;
+    position: absolute;
+    top: -130px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+}
+
+.box {
+    width: 26%;
+    height: 28rem;
+    min-width: 0%;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 2px solid rgb(176, 48, 48);
+    position: relative;
+}
+
+.box-bg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.box-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.inner-box img {
+    position: absolute ;
+    top: 15% ;
+    left: 50% ;
+    transform: translateX(-50%);
+}
+.inner-box div {
+    position: absolute;
+    top: 40% ;
+    left: 50% ;
+    transform: translateX(-50%);
+    width: 78% ;
+    height: 55% ;
+    text-align: center;
+    padding-top: 3%;
+    cursor: default;
+}
+.inner-box div h1 {
+    color: white ;
+    font-size: 1.9rem;
+}
+.inner-box div p {
+    color: white ;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    
+}
+
+.icon-banner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.three {
+    width: 100% ;
+    height: 6rem;
+    position: relative;
+    background-image:  url(../image/meetings-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.three div:nth-child(1) {
+    position: absolute ;
+    top: 5%;
+    left: 50% ;
+    transform: translateX(-50% );
+}
+.three div:nth-child(1) h1 {
+    color: white ;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+.three div:nth-child(2) {
+    position: absolute ;
+    bottom: 0% ;
+    left: 50% ;
+    transform: translateX(-50%);
+    width: 85%;
+    height: .5px;
+    background-color: rgba(255, 255, 255, 0.269);
+    border-radius: 2rem;
+}
+.four {
+    width: 100% ;
+    height: 90rem;
+    position: relative;
+    background-image:  url(../image/meetings-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.inner_part {
+    width: 85% ;
+    height: 80%;
+    position: absolute ;
+    top: 50%;
+    left: 50% ;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    display: flex ;
+    gap: 5rem;
+    flex-wrap: nowrap ;
+    flex-direction: row;
+    transition: all .3s;
+}
+.right_part {
+    width: 70% ;    
+    height: 100% ;
+}
+.left_part {
+    width: 30% ;
+    height: 100% ;
+}
+.white_box {
+    width: 95% ;
+    height: 55% ;
+    background-color: white ;
+    border-radius: 2rem;
+    position: relative;
+}
+.inner-white-box {
+    width: 90% ;
+    height: 90% ;
+    position: absolute ;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%,-50%);
+}
+.inner-white-box div:nth-child(1) {
+    position: relative;
+    width: 100% ;
+    height: 15% ;
+    padding-top: 1rem ;
+    padding-left: 1rem ;
+}
+.inner-white-box div:nth-child(1) h1 {
+    color: var(--gray-color) ;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.inner-white-box div:nth-child(1) div {
+    position: absolute ;
+    bottom :0% ;
+    width: 94% ;
+    height: .5px;
+    background-color: rgba(93, 93, 93, 0.42);
+    border-radius: 2rem;
+}
+.inner-white-box div:nth-child(2) {
+    position: relative;
+    width: 100% ;
+    height: 65% ;
+    padding-left: 1rem ;
+    overflow: hidden;
+}
+.inner-white-box div:nth-child(2) a {
+    display: block;
+    color: var(--gray-color) ;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 3.7rem;
+    transition: all .3s;
+}
+.inner-white-box div:nth-child(2) a:hover {
+    color: var(--red-color) ;
+}
+.inner-white-box div:nth-child(2) div {
+    position: absolute ;
+    bottom :1% ;
+    width: 94% ;
+    height: .5px;
+    background-color: rgba(93, 93, 93, 0.42);
+    border-radius: 2rem;
+}
+.inner-white-box div:nth-child(3) {
+    width: 100% ;
+    height: 20% ;
+    position: relative;
+}
+.inner-white-box div:nth-child(3) div {
+    width: 80% ;
+    height: 50% ;
+    position: absolute ;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%,-50%);
+    background-color: var(--red-color);
+    border-radius: 2.5rem;
+    text-align: center;
+    transition: all .3s;
+}
+.inner-white-box div:nth-child(3) div a {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    color: white ;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transform: translate(-50%,-50%);
+    line-height: 3rem;
+    width: 100% ;
+    height: 100%;
+}
+.inner-white-box div:nth-child(3) div:hover {
+    background-color: rgb(158, 55, 55) ;
+} 
+.list {
+    width: 100%;
+    height: 100%;
+    display: flex ;
+    flex-wrap: wrap ;
+    gap: 2rem;
+}
+
+.In-list {
+    position: relative;
+    width: 47%;
+    height: 34rem;
+    background-color: white;
+    border-radius: 2.5rem;
+    overflow: hidden;
+}
+.pic {
+    width: 100% ;
+    height: 60%;
+    position: relative;
+}
+.Price {
+    position: absolute ;
+    top: 8% ;
+    left: 6%;
+    width: 7.5rem;
+    height: 3.7rem;
+    background-color: rgba(246, 241, 241, 0.963);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+.Price p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(39, 36, 36);
+}
+.list div img {
+    width: 100%;
+    height: 100% ;
+    object-fit: cover;
+}
+.Info {
+    display: flex;
+    position: absolute;
+    top: 65% ;
+    left: 50% ;
+    transform: translateX(-50%);
+    width: 38rem ;
+    height: 10rem ;
+}
+.date {
+    width: 13%;
+    height: 70%;
+    margin: 2% 5%;
+    text-align: center;
+}
+.date h4 {
+    font-size: 1.4rem;
+    color: var(--red-color);
+    line-height: 2.4rem;
+}
+.date p {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    color: rgb(39, 36, 36);
+}
+.txt {
+    margin-top: 1rem ;
+    width: 70% ;
+    height: 80%;
+}
+.txt h3 {
+    font-size: 1.9rem;
+    color: rgb(39, 36, 36);
+    line-height: 2rem;
+}
+.txt p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+.five {
+    width: 100% ;
+    height: 80rem ;
+    background-image:  url(../image/apply-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.five .inner {
+    width: 85%;
+    height: 80%;
+    position: absolute ;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%,-50%);
+    display: flex ;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .6s;
+}
+.left-box {
+    width: 50% ;
+    height: 85% ;
+    display: flex ;
+    align-items: center ;
+    flex-direction: column ;
+    gap: 2.5rem;
+    
+}
+.left-box .first-box , .left-box .second-box {
+    background-color: rgba(255, 255, 255, 0.154);
+    display: block;
+    width: 100% ;
+    height: 43% ;
+    padding-top: 4rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    overflow: hidden;
+
+}
+.left-box div h1 {
+    color: white ;
+    font-size: 2.2rem ;
+    font-weight: 700;
+}
+.left-box div p {
+    color: white ;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+.first-box , .second-box {
+    width: 100% ;
+    height: 100%;
+    position: relative;
+}
+.first-box .inner-button {
+    background-color: var(--red-color);
+} 
+.second-box .inner-button {
+    background-color: var(--yellow-color);
+}
+.inner-button{
+    width: 22% ;
+    height: 17%;
+    position: absolute ;
+    top: 70%;
+    border-radius: 3rem;
+    padding-top: .5rem;
+}
+.inner-button a {
+    color: white ;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3rem;
+}
+.right-box {
+    width: 45% ;
+    height: 85% ; 
+}
+.right-box .white_box {
+    width: 95% ;
+    height: 100% ;
+    background-color: white ;
+    border-radius: 3rem ;
+    margin: 0 3%;
+    position: relative;
+}
+.rightBox-inner-white-box {
+    display: flex ;
+    flex-direction: column;    
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%,-50%);
+}
+.part1 {
+    width: 100% ;
+    height: 35% ;
+    overflow: hidden;
+    /* padding-top: 2rem; */
+    position: relative;
+    padding-left: 1rem;
+    
+}
+.part1 a {
+    color: var(--yellow-color) ;
+    font-size: 1.8rem ;
+    font-weight: 700;
+}
+.part1 div{
+    width: 100% ;
+    height: 100%;
+    padding-left: 3rem ;
+    padding-right: 4rem;
+}
+#line {
+    width: 90% ;
+    height: 1px ;
+    background-color: rgba(134, 134, 134, 0.338) ;
+    position: absolute ;
+    top: 99% ;
+    left: 50% ;
+    transform: translateX(-50% );
+}
+.part1 div p {
+    color: var(--gray-color);
+    font-size: 1.5rem ;
+    line-height: 2.5rem;
+}
+.part1 div p a {
+    color: rgb(61, 184, 211) ;
+    font-size: 1.5rem ;
+    line-height: 2.5rem; 
+    font-weight: 500;
+}
+.part2 {
+    width: 100%;
+    height: 20% ;
+    overflow: hidden;
+    position: relative ;
+    padding-left: 1rem ;
+    padding-top: 1.5rem;
+}
+.part2 a {
+    color: var(--gray-color) ;
+    font-size: 1.8rem ;
+    font-weight: 600;
+}
+.part2 div {
+    width: 100% ;
+    height: 100%;
+    padding-left: 3rem ;
+    padding-right: 4rem;
+}
+.part2 div p {
+    color: var(--gray-color);
+    font-size: 1.5rem ;
+    line-height: 2.5rem;
+}
+.part3 {
+    width: 100% ;
+    height: 20%;
+    overflow: hidden;
+    position: relative ;
+    padding-left: 1rem ;
+    padding-top: 1.5rem;
+}
+.part3 a {
+    color: var(--gray-color) ;
+    font-size: 1.8rem ;
+    font-weight: 600;
+}
+.part3 div {
+    width: 100% ;
+    height: 100%;
+    padding-left: 3rem ;
+    padding-right: 4rem;
+}
+.part3 div p {
+    color: var(--gray-color);
+    font-size: 1.5rem ;
+    line-height: 2.5rem;
+}
+.part4 {
+    width: 100% ;
+    height: 25%;
+    overflow: hidden;
+    position: relative ;
+    padding-left: 1rem ;
+    padding-top: 1.5rem;
+}
+.part4 a {
+    color: var(--gray-color) ;
+    font-size: 1.8rem ;
+    font-weight: 600;
+}
+.part4 div {
+    width: 100% ;
+    height: 100%;
+    padding-left: 3rem ;
+    padding-right: 4rem;
+}
+.part4 div p {
+    color: var(--gray-color);
+    font-size: 1.5rem ;
+    line-height: 2.5rem;
+}
+.six {
+    background-image: url(../image/meetings-bg.jpg);
+    background-attachment: fixed;
+    width: 100% ;
+    height: 80rem;
+    position: relative;
+}
+.inner-six {
+    width: 85% ;
+    height: 80% ;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    position: absolute ;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%,-50%);
+
+}
+.leftOne {
+    width: 70% ;
+    height: 75% ;
+    background-color: white ;
+    border-radius: 2.5rem;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center;
+    
+}
+.leftOne div:nth-child(1) {
+    width: 90% ;
+    height: 25%;
+    padding-top: 4.5rem;
+}
+.leftOne div:nth-child(1) h1 {
+    color: var(--gray-color);
+    font-size: 2.4rem ;
+    font-weight: 700;
+}
+.leftOne div:nth-child(1) div {
+    background-color: rgba(142, 142, 142, 0.399) ;
+    width: 100% ;
+    height: 1px;
+}
+.leftOne div:nth-child(2) {
+    width: 90% ;
+    height: 75%;
+    
+}
+.form {
+    display: flex ;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+.form input {
+    width: 28% ;
+    height: 4rem ;
+    background-color: rgba(170, 170, 170, 0.208);
+    border-radius: 3rem ;
+    border: none;
+    padding-left: 1rem;
+}
+.form textarea {
+    background-color: rgba(170, 170, 170, 0.208);
+    border-radius: 3rem ;
+    border: none;
+    padding-top: 2rem;
+    padding-left: 3rem;
+}
+.form button {
+    background-color: var(--red-color) ;
+    width: 18rem;
+    height: 4rem ;
+    border-radius: 3rem ;
+    border: none;
+    transform: translate(10%,-20%);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.rightOne {
+    width: 22% ;
+    height: 81% ;
+    background-color: var(--red-color) ;
+    border-radius: 2.5rem;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.rightOne div {
+    width: 90% ;
+    height: 25% ;
+    padding-top: 10%;
+    padding-left: 4%;
+    position: relative;
+}
+.rightOne h3 {
+    color: white ;
+    font-size: 1.6rem ;
+    line-height: 3rem;
+}
+.rightOne h1 {
+    color: white ;
+    font-size: 1.8rem ;
+    line-height: 3rem;
+}
+
+.copyRightPart {
+    width: 100% ;
+    height: 20vh ;
+    position: relative;
+    text-align: center ;
+    padding-top: 4rem;
+    background-image:  url(../image/meetings-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.copyRightPart div {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 1px ;
+    background-color: rgba(255, 255, 255, 0.492);
+}
+
+.copyRightPart p {
+    font-size: 1.3rem ;
+    color: white;
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+.copyRightPart a {
+    color: var(--yellow-color);
+}
+@media screen and (max-width:1050px) {
+    .caption h1 {
+        font-size: 2.3rem ;
+    }
+    .caption p {
+        font-size: 1.4rem ;
+    }
+    .RedButton {
+        margin: 7% 8%;
+    }
+}
+@media screen and (max-width:1024px) {
+    nav h1 {
+        font-size: 2.2rem;
+    }
+    nav ul {
+        gap: 2.1 rem ;
+    }
+    nav a {
+        font-size: 1.2rem;
+    }
+    .caption {
+        margin: 4% 13%;
+        width: 50%;
+    }
+    .caption h1 {
+        font-size: 2.1rem ;
+    }
+    .caption p {
+        font-size: 1.3rem ;
+    }
+    .RedButton {
+        margin: 10% 8%;
+    }
+    .inner_part {
+        gap: 2rem;
+    }
+    .In-list {
+        height: 35rem;
+    }
+    .Info {
+        flex-direction: column;
+    }
+    .date {
+        margin: -2% 16%;
+    }
+    .txt {
+        margin-left: 18%;
+    }
+    .txt h3 {
+        font-size: 1.7rem;
+        line-height: 1.8rem;
+    }
+    .txt p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .first-box .inner-button {
+        top: 76% ;
+    }
+    .left-box div h1 {
+        font-size: 2rem ;
+    }
+    .left-box div p {
+        font-size: 1.2rem ;
+    }
+    .inner-button {
+        padding-top: .4rem;
+    }
+    .inner-button a {
+        font-size: 1rem; 
+    }
+    .rightOne h3 {
+        font-size: 1.4rem;
+    }
+    .rightOne h1 {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:980px) {
+    .two {
+        height: 34rem;
+    }
+    .caption {
+        margin: 6% 8% ;
+    }
+    .slid {
+        top:10px ;
+    }
+    .box {
+        width: 35%;
+    }
+    .slid .box:nth-child(3) {
+        display: none;
+    }
+    .four {
+        height: 209rem;
+    }
+    .inner_part {
+        height: 90%;
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right_part {
+        width: 100%;
+    }
+    .left_part {
+        width: 100% ;
+        height: 35%;
+    }
+    .white_box {
+        height: 100%;
+    }
+    .inner-white-box div:nth-child(1) {
+        height: 25%;
+    }
+    .inner-white-box div:nth-child(2) {
+        height: 48%;
+        margin-top: -2%;
+        margin-bottom: 2%;
+    }
+    .inner-white-box div:nth-child(3) {
+        height: 27%;
+    }
+    .list {
+        display: flex ;
+        flex-direction: column ;
+        align-items: center;
+    }
+    .In-list {
+        width: 80% ;
+        height: 36rem ;
+    }
+    .Info {
+        display: flex ;
+        flex-direction: row;
+    }
+    .date {
+        width: 13%;
+        height: 70%;
+        margin: 2% -3%;
+        text-align: center;
+    }
+    .txt {
+        margin-top: 1rem ;
+        width: 70% ;
+        height: 80%;
+    }
+    .txt h3 {
+        font-size: 1.9rem;
+        color: rgb(39, 36, 36);
+        line-height: 2rem;
+    }
+    .txt p {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+    .five {
+        height: 120rem;
+    }
+    .five .inner {
+        flex-direction: column ;
+        height: 90%;
+    }
+    .left-box {
+        width: 80% ;
+        height: 92%;
+    }
+    .left-box div h1 {
+        font-size: 2.2rem ;
+    }
+    .left-box div p {
+        font-size: 1.4rem ;
+    }
+    .inner-button {
+        padding-top: .5rem;
+    }
+    .inner-button a {
+        font-size: 1.2rem; 
+    }
+    .right-box {
+        width: 80% ;
+        height: 100%;
+    }
+    .six {
+        height: 110rem;
+    }
+    .inner-six {
+        flex-direction: column;
+        gap: 3rem;
+        height: 90%;
+    }
+    .leftOne {
+        width: 90% ;
+        height: 90%;
+    }
+    .form {
+        padding-top: 1rem;
+    }
+    .form button {
+        transform: translate(10%,40%);
+    }
+    .rightOne {
+        width: 70% ;
+        height: 50%;
+    }
+    .rightOne div {
+        padding-top: 5%;
+    }
+    .rightOne h3 {
+        color: white ;
+        font-size: 1.6rem ;
+        line-height: 3rem;
+    }
+    .rightOne h1 {
+        color: white ;
+        font-size: 1.8rem ;
+        line-height: 3rem;
+    }
+}
+@media screen and (max-width:800px) {
+    .form {
+        flex-direction: column;
+        gap: 1rem ;
+        padding-top: 5%;
+    }
+    .leftOne div:nth-child(1) {
+        height: 18% ;
+    }
+    .form input {
+        width: 95% ;
+    }
+    .form textarea {
+        width: 95% ;
+        height: 15rem;
+    }
+    .leftOne {
+        height: 60%;
+    }
+    .form button {
+        transform: translate(10%,30%);
+    }
+}
+@media screen and (max-width:680px) {
+    nav h1 {
+        font-size: 2rem;
+    }
+    nav ul {
+        gap: 1.9 rem ;
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    .RedButton {
+        margin: 16% 8%;
+    }
+    .caption {
+        margin: 11% 8% ;
+        width: 60%;
+    }
+    .caption p {
+        line-height: 2.3rem;
+    }
+    .left-box .first-box , .left-box .second-box {
+        padding-top: 3rem;
+    }
+    .left-box div h1 {
+        font-size: 1.6rem ;
+    }
+    .left-box div p {
+        font-size: 1.2rem ;
+        line-height: 2rem;
+    }
+    .inner-button a {
+        font-size: 1rem ;
+        font-weight: 600;
+    }
+}
