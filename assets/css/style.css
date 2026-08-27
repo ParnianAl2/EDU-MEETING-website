@@ -16,13 +16,11 @@ html {
     --yellow-color: rgb(223, 168, 29) ;
     --gray-color :  rgb(21, 20, 27) ;
 }
-
 .one {
-    position: relative;
-}
-
-.one img {
-    position: absolute;
+    position: relative ;
+    background-image: url(../image/35788246e57124003045c7d0ca929597.jpg);
+    background-size: cover ;
+    background-position: center;
     width: 100%;
     height: 100vh;
     z-index: -1;
@@ -35,7 +33,7 @@ header {
 }
 
 nav h1 {
-    font-size: 2.5rem;
+    font-size: 2.9rem;
 }
 
 nav {
@@ -56,7 +54,7 @@ nav ul {
 
 nav a {
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     transition: all .3s;
 }
@@ -100,7 +98,7 @@ nav ul li:nth-child(1) a {
     color: var(--yellow-color);
 }
 .caption {
-    margin: 4% 8%;
+    margin: 4% 14%;
     width: 40% ;
     height: 25% ;
 }
@@ -131,7 +129,7 @@ nav ul li:nth-child(1) a {
 }
 
 .RedButton {
-    margin: 5% 8%;
+    margin: 5% 14%;
     width: 14.5rem;
     height: 4.5rem;
     border-radius: 2.5rem;
@@ -245,7 +243,7 @@ nav ul li:nth-child(1) a {
 }
 .three div:nth-child(1) {
     position: absolute ;
-    top: 5%;
+    top: 60%;
     left: 50% ;
     transform: translateX(-50% );
 }
@@ -297,7 +295,7 @@ nav ul li:nth-child(1) a {
     height: 100% ;
 }
 .white_box {
-    width: 95% ;
+    width: 100% ;
     height: 55% ;
     background-color: white ;
     border-radius: 2rem;
@@ -913,9 +911,10 @@ nav ul li:nth-child(1) a {
     }
     .slid {
         top:10px ;
+        gap: 25px;
     }
     .box {
-        width: 35%;
+        width: 38%;
     }
     .slid .box:nth-child(3) {
         display: none;
@@ -1068,6 +1067,10 @@ nav ul li:nth-child(1) a {
     .form button {
         transform: translate(10%,30%);
     }
+    nav ul {
+        display: none;
+    }
+    
 }
 @media screen and (max-width:680px) {
     nav h1 {
@@ -1102,5 +1105,17 @@ nav ul li:nth-child(1) a {
     .inner-button a {
         font-size: 1rem ;
         font-weight: 600;
+    }
+    .slid .box:nth-child(2) {
+        display: none;
+    }
+    .box {
+        width: 60%;
+    }
+    .slid{
+        gap: 10px;
+    }
+    .three div:nth-child(1) h1{
+        font-size: 2rem;
     }
 }
