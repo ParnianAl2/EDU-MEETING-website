@@ -46,7 +46,9 @@ nav {
     padding: 0 8%;
     color: white;
 }
-
+nav ul:nth-child(3) {
+    display: none ;
+}
 nav ul {
     display: flex;
     gap: 2.4rem;
@@ -533,7 +535,7 @@ nav ul li:nth-child(1) a {
     background-color: var(--yellow-color);
 }
 .inner-button{
-    width: 22% ;
+    width: 24% ;
     height: 17%;
     position: absolute ;
     top: 70%;
@@ -970,7 +972,7 @@ nav ul li:nth-child(1) a {
     }
     .txt {
         margin-top: 1rem ;
-        width: 70% ;
+        width: 60% ;
         height: 80%;
     }
     .txt h3 {
@@ -1067,10 +1069,15 @@ nav ul li:nth-child(1) a {
     .form button {
         transform: translate(10%,30%);
     }
-    nav ul {
+    nav ul:nth-child(2) {
         display: none;
     }
-    
+    nav ul:nth-child(3) {
+        display: flex;
+    }
+    nav i {
+        font-size: 2.5rem;
+    }
 }
 @media screen and (max-width:680px) {
     nav h1 {
@@ -1080,20 +1087,20 @@ nav ul li:nth-child(1) a {
         gap: 1.9 rem ;
     }
     nav a {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .RedButton {
         margin: 16% 8%;
     }
     .caption {
         margin: 11% 8% ;
-        width: 60%;
+        width: 80%;
     }
     .caption p {
         line-height: 2.3rem;
     }
     .left-box .first-box , .left-box .second-box {
-        padding-top: 3rem;
+        padding: 2rem;
     }
     .left-box div h1 {
         font-size: 1.6rem ;
@@ -1102,8 +1109,11 @@ nav ul li:nth-child(1) a {
         font-size: 1.2rem ;
         line-height: 2rem;
     }
+    .inner-button{
+        width: 35%;
+    }
     .inner-button a {
-        font-size: 1rem ;
+        font-size: 1.2rem ;
         font-weight: 600;
     }
     .slid .box:nth-child(2) {
@@ -1117,5 +1127,14 @@ nav ul li:nth-child(1) a {
     }
     .three div:nth-child(1) h1{
         font-size: 2rem;
+    }
+    .txt {
+        margin-left: 1%;
+    }
+    .date{
+        margin: 2% 3%;
+    }
+    .Info{
+        left: 63%;
     }
 }
